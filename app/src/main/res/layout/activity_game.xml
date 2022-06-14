@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gardilily.gomoku.ui.GameActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/shape_oneui_style_button_dark"
+        android:gravity="center"
+        android:text="等待"
+        android:textColor="#fff"
+        android:id="@+id/game_title"
+        android:textSize="36sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="468dp"
+        android:layout_margin="12dp"
+        android:background="@drawable/shape_oneui_style_button_dark"
+        android:id="@+id/game_board"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="12dp"
+        android:background="@drawable/shape_oneui_style_button_dark"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/game_btnConfirm"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="确认"
+            android:textColor="#fff"
+            android:textSize="26sp"
+            android:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/game_progressBar"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#7fff" />
+
+        <Button
+            android:id="@+id/game_btnRegret"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="悔棋"
+            android:textColor="#fff"
+            android:textSize="26sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#7fff" />
+
+        <Button
+            android:id="@+id/game_btnExit"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="退出"
+            android:textColor="#fff"
+            android:textSize="26sp" />
+    </LinearLayout>
+
+</RelativeLayout>

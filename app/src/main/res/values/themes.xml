@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.Gomoku.Base" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">?attr/theme_color_accent</item>
+        <item name="colorPrimaryDark">?attr/theme_color_accent</item>
+        <item name="colorOnPrimary">?attr/theme_color_accent</item>
+        <item name="colorAccent">?attr/theme_color_accent</item>
+
+        <item name="windowNoTitle">true</item>
+
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+
+    <style name="Theme.Gomoku.Main" parent="Theme.Gomoku.Base">
+        <item name="theme_color_accent">#b78b26</item>
+        <item name="background_color_gradient_start">#b78b26</item>
+        <item name="background_color_gradient_end">#b78b26</item>
+    </style>
+
+</resources>

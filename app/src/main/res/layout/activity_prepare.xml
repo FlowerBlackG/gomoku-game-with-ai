@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gardilily.gomoku.ui.PrepareActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="24dp"
+        android:background="@drawable/shape_oneui_style_button_dark"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="48dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="五子棋"
+            android:textColor="#fff"
+            android:textSize="42sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gomoku"
+            android:textColor="#fff"
+            android:layout_marginTop="8dp"
+            android:textSize="42sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="36dp"
+            android:background="#7000" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="人人对战"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:id="@+id/prepare_btnPvp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#7000" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="人机对战 我要白棋"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:id="@+id/prepare_btnPvcPlayerWhite"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#7000" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="人机对战 我要黑棋"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:id="@+id/prepare_btnPvcPlayerBlack"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#7000" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
