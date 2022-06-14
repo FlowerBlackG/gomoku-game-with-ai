@@ -701,8 +701,6 @@ class GomokuAgent private constructor(builder: Builder) {
 	 * @param direction 方向。该方向会被双向延伸。
 	 *
 	 * @return 找到的条数。
-	 *
-	 * @author 赵奕菲
 	 */
 	private fun searchLines(refBoard: GameBoard,
 							center: Coord,
@@ -763,7 +761,6 @@ class GomokuAgent private constructor(builder: Builder) {
 	/**
 	 * 基于之前计算过的分数，重新评估棋盘分数。本次评估不会全盘评估，而是根据可能影响到的点重新计算。
 	 *
-	 * @author 赵奕菲，龚天遥
 	 */
 	private fun reEvaluateBoardScore(refGameBoard: GameBoard, pieceColor: PieceColor,
 									 updatedCoord: Coord, previousScore: Long
@@ -838,7 +835,6 @@ class GomokuAgent private constructor(builder: Builder) {
 	 * @param lastSteps 之前的步骤记录。如果非空，则长度必须是 2. 其中，下标为 1 的元素是上一步的，下标为 0 的是更早一步的。
 	 *                  外部调用时严禁设置此参数。
 	 *
-	 * @author 赵奕菲，龚天遥
 	 */
 	private fun alphaBetaSearch(refBoard: GameBoard,
 								boardScore: Long,
